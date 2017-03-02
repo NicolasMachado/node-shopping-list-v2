@@ -45,7 +45,7 @@ app.post('/shopping-list', jsonParser, (req, res) => {
 
   const item = ShoppingList.create(req.body.name, req.body.budget);
   res.status(201).json(item);
-});
+}); 
 
 
 app.get('/recipes', (req, res) => {
